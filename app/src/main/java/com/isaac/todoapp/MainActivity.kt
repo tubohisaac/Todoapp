@@ -44,7 +44,6 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(applicationContext," Incorrect username or password", Toast.LENGTH_SHORT).show()
         }
 }   private fun isvaildcredentials( username: String,password: String): Boolean {
-        if (username == validusername && password == validpassword) return true
-         return false
+        return ( password == validpassword)
 }
 }
